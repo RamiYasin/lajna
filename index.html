@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لجنة الرقابة والانضباط الوزارية | وزارة الدفاع</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="brand">
+                <div class="brand-logo-box" id="logoContainer">
+                    <img src="logo.jpg" alt="لجنة الرقابة والانضباط الوزارية" class="brand-logo">
+                </div>
+                <div class="brand-title">
+                    <h1>لجنة الرقابة والانضباط الوزارية</h1>
+                    <span>وزارة الدفاع - القيادة العليا</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#charter">الصلاحيات</a></li>
+                <li><a href="#sectors">قائمة القطاعات</a></li>
+                <li><a href="#members">تشكيل الأعضاء</a></li>
+                <li><a href="#elite">〡⚔️defense・elite・اعضاء⚔️</a></li>
+                <li><a href="#fieldwork">العمل الميداني</a></li>
+                <li><a href="#generator">مولد القرارات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="mid-logo-box"><img src="logo.jpg" alt="لجنة الرقابة والانضباط الوزارية" class="mid-logo"></div>
+            <div class="hero-text">
+                <div class="badge-top">⚖️ القيادة والرقابة العليا</div>
+                <h2>لجنة الرقابة والانضباط الوزارية لوزارة الدفاع</h2>
+                <p>الجهة الرقابية العليا المسؤولة عن ضبط الأداء العسكري، تنفيذ التفتيش المفاجئ، وإعادة تأهيل القطاعات تحت إشراف معالي الوزير ونائبه مباشرة.</p>
+                <div class="hero-actions">
+                    <a href="#members" class="btn btn-cyan">إدارة تشكيل الأعضاء</a>
+                    <button type="button" class="btn btn-gold" id="copyCharterHero">نسخ كليشة الصلاحيات</button>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Charter Section -->
+        <section id="charter" class="section">
+            <div class="section-head">
+                <div class="section-title-group">
+                    <h3>ميثاق وصلاحيات لجنة الانضباط</h3>
+                    <p>الصلاحيات المعتمدة رسمياً لأعضاء لجنة الرقابة والتفتيش في كافة القطاعات</p>
+                </div>
+                <span class="gold-note">تُحدّث البيانات من لوحة Supabase</span>
+            </div>
+
+            <div class="charter-grid">
+                <div class="charter-card">
+                    <span class="band-tag">بند 01</span>
+                    <h4>مراقبة الانضباط العسكري</h4>
+                    <p>متابعة ومراقبة الالتزام بالأنظمة والتعليمات العسكرية في جميع قطاعات وزارة الدفاع.</p>
+                </div>
+                <div class="charter-card">
+                    <span class="band-tag">بند 02</span>
+                    <h4>صلاحية التفتيش المفاجئ</h4>
+                    <p>دخول أي قطاع عسكري ومراجعة مستوى الانضباط والجاهزية دون الحاجة لموعد مسبق.</p>
+                </div>
+                <div class="charter-card">
+                    <span class="band-tag">بند 03</span>
+                    <h4>رصد القطاعات الضعيفة</h4>
+                    <p>تحديد ورصد القطاعات التي تعاني من ضعف النشاط أو قلة التفاعل الميداني والإداري.</p>
+                </div>
+                <div class="charter-card">
+                    <span class="band-tag">بند 04</span>
+                    <h4>برامج الإنعاش والتأهيل</h4>
+                    <p>اعتماد وتنفيذ برامج إنعاش وتأهيل شاملة لرفع كفاءة القطاعات العسكرية المتعثرة.</p>
+                </div>
+                <div class="charter-card">
+                    <span class="band-tag">بند 05</span>
+                    <h4>دعم التوظيف والاستقطاب</h4>
+                    <p>المساهمة الفاعلة في فتح باب التوظيف واستقطاب أفراد جدد لتعزيز القوة البشرية.</p>
+                </div>
+                <div class="charter-card">
+                    <span class="band-tag">بند 06</span>
+                    <h4>التقارير الدورية للوزارة</h4>
+                    <p>متابعة نتائج التحسن الميداني ورفع تقارير دورية مفصلة إلى قيادة الوزارة.</p>
+                </div>
+            </div>
+
+            <div class="immunity-box">
+                <h4>🛡️ بند الحصانة والمحاسبة الوزارية:</h4>
+                <p>محاسبة أعضاء اللجنة تكون عند معالي الوزير ونائبه فقط، ويُستثنى من ذلك رتبة اعضاء المجلس الاعلى.</p>
+            </div>
+
+            <button type="button" class="btn btn-gold" id="copyCharterBtn">نسخ الصلاحيات للديسكورد</button>
+        </section>
+
+        <!-- Sectors List Section -->
+        <section id="sectors" class="section">
+            <div class="section-head">
+                <div class="section-title-group">
+                    <h3>قائمة القطاعات</h3>
+                    <p>عرض حالة القطاعات المسجلة في قاعدة البيانات</p>
+                </div>
+                <span class="gold-note">3 قطاعات معتمدة</span>
+            </div>
+
+            <div class="sectors-grid" id="sectorsContainer"></div>
+        </section>
+
+        <!-- Members Section -->
+        <section id="members" class="section">
+            <div class="section-head">
+                <div class="section-title-group">
+                    <h3>تشكيل أعضاء لجنة التفتيش</h3>
+                    <p>عرض تشكيل الأعضاء والقطاعات الموكلة إليهم</p>
+                </div>
+                <div style="display:flex; gap:0.75rem;">
+                    
+                    <button type="button" class="btn btn-gold" id="copyMembersBtn">نسخ التشكيل للديسكورد</button>
+                </div>
+            </div>
+
+            <div class="members-stack" id="membersContainer"></div>
+        </section>
+
+        <!-- Elite Members Section -->
+        <section id="elite" class="section">
+            <div class="section-head">
+                <div class="section-title-group">
+                    <h3>〡⚔️defense・elite・اعضاء⚔️</h3>
+                    <p>قائمة أعضاء النخبة المعتمدين في وزارة الدفاع</p>
+                </div>
+                <div style="display:flex; gap:0.75rem;">
+                    
+                    <button type="button" class="btn btn-gold" id="copyEliteBtn">نسخ قائمة النخبة</button>
+                </div>
+            </div>
+
+            <div class="members-stack" id="eliteContainer"></div>
+        </section>
+
+        <!-- Fieldwork Inspection Report -->
+        <section id="fieldwork" class="section">
+            <div class="section-head">
+                <div class="section-title-group">
+                    <h3>نموذج إعداد تقرير التفتيش</h3>
+                    <p>إعداد معاينة تقرير التفتيش محلياً دون حفظ تغييرات في قاعدة البيانات</p>
+                </div>
+                <span class="score-badge" id="totalScoreDisplay">النتيجة النهائية: 67/100</span>
+            </div>
+
+            <div class="two-col-box">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>تاريخ اليوم</label>
+                        <input type="date" class="form-control fw-input" id="fwTodayDate">
+                    </div>
+                    <div class="form-group">
+                        <label>تاريخ التفتيش</label>
+                        <input type="date" class="form-control fw-input" id="fwInspectDate">
+                    </div>
+                    <div class="form-group full">
+                        <label>اسم القطاع (منشن)</label>
+                        <select id="fwSector" class="form-control fw-input"><option value="">جاري تحميل القطاعات...</option></select>">
+                    </div>
+                    <div class="form-group full">
+                        <label>أعضاء اللجنة والنخبة المشاركين</label>
+                        <div id="fwInspectorsList" class="fw-checklist" aria-live="polite"><p class="fw-checklist-empty">جاري تحميل قائمة الأعضاء...</p></div>
+                    </div>
+                    <div class="form-group">
+                        <label>الانضباط العسكري (/25)</label>
+                        <input type="number" max="25" min="0" class="form-control fw-input" id="fwScore1" value="6">
+                    </div>
+                    <div class="form-group">
+                        <label>النشاط والتفاعل (/20)</label>
+                        <input type="number" max="20" min="0" class="form-control fw-input" id="fwScore2" value="20">
+                    </div>
+                    <div class="form-group">
+                        <label>الالتزام بالأوامر (/20)</label>
+                        <input type="number" max="20" min="0" class="form-control fw-input" id="fwScore3" value="13">
+                    </div>
+                    <div class="form-group">
+                        <label>أداء القيادة (/15)</label>
+                        <input type="number" max="15" min="0" class="form-control fw-input" id="fwScore4" value="8">
+                    </div>
+                    <div class="form-group full">
+                        <label>جودة السيناريوهات (/20)</label>
+                        <input type="number" max="20" min="0" class="form-control fw-input" id="fwScore5" value="20">
+                    </div>
+                    <div class="form-group full">
+                        <label>السلبيات</label>
+                        <textarea class="form-control fw-input" id="fwNegatives" rows="2">-9894:استهبال بالميدان 
+-9761:عدم احترام اللجنه والاعتداء عليهم بالضرب</textarea>
+                    </div>
+                    <div class="form-group full">
+                        <label>الإيجابيات</label>
+                        <textarea class="form-control fw-input" id="fwPositives" rows="2">تفاعلهم في الموجه
+توجه للسناريوهات بسرعه دون تأخير</textarea>
+                    </div>
+                </div>
+
+                <div class="preview-box">
+                    <div>
+                        <div style="color:var(--accent-gold); font-weight:700; font-size:0.9rem; margin-bottom:0.75rem;">معاينة كليشة التقييم الجاهزة</div>
+                        <div class="preview-text" id="fwPreview"></div>
+                    </div>
+                    <button type="button" class="btn btn-gold" style="width:100%; justify-content:center;" id="copyFwBtn">نسخ تقرير التفتيش للديسكورد</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decision Generator -->
+        <section id="generator" class="section">
+            <div class="section-head">
+                <div class="section-title-group">
+                    <h3>مولد القرارات الإدارية</h3>
+                    <p>إصدار قرارات التعيين أو المخالفات أو الاستدعاءات بتنسيق الديسكورد</p>
+                </div>
+            </div>
+
+            <div class="two-col-box">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>نوع القرار</label>
+                        <select class="form-control gen-input" id="genType">
+                            <option value="قرار تفتيش مفاجئ">قرار تفتيش مفاجئ</option>
+                            <option value="قرار مخالفة انضباطية">قرار مخالفة انضباطية</option>
+                            <option value="قرار تعيين عضو لجنة">قرار تعيين عضو لجنة</option>
+                            <option value="استدعاء للتحقيق الوزاري">استدعاء للتحقيق الوزاري</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>المعني بالقرار (منشن)</label>
+                        <input type="text" class="form-control gen-input" id="genTarget" value="<@1202660677190287421>">
+                    </div>
+                    <div class="form-group full">
+                        <label>القطاع</label>
+                        <input type="text" class="form-control gen-input" id="genSector" value="القوات المسلحة">
+                    </div>
+                    <div class="form-group full">
+                        <label>نص القرار والتفاصيل</label>
+                        <textarea class="form-control gen-input" id="genDetails" rows="4">بناءً على الصلاحيات المخولة للجنة الرقابة والانضباط الوزارية، تقرر اعتماد ما ورد أعلاه والعمل به فوراً.</textarea>
+                    </div>
+                </div>
+
+                <div class="preview-box">
+                    <div>
+                        <div style="color:var(--accent-gold); font-weight:700; font-size:0.9rem; margin-bottom:0.75rem;">معاينة القرار الرسمي</div>
+                        <div class="preview-text" id="genPreview"></div>
+                    </div>
+                    <button type="button" class="btn btn-cyan" style="width:100%; justify-content:center;" id="copyGenBtn">نسخ القرار للديسكورد</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        لجنة الرقابة والانضباط الوزارية لوزارة الدفاع &copy; 2026
+    </footer>
+
+    <div class="toast" id="toast">تم النسخ بنجاح</div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
