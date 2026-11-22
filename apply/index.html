@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1b30">
+  <title>نموذج طلب الالتحاق باللجنة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="backdrop-pattern"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="بوابة لجنة الرقابة والانضباط">
+      <span class="logo-wrap"><img src="logo.jpg" alt="شعار لجنة الرقابة والانضباط"></span>
+      <span><b>لجنة الرقابة والانضباط</b><small>الوزارة · بوابة التقديم</small></span>
+    </a>
+    <div class="header-note"><i></i> بوابة التقديم الإلكترونية</div>
+  </header>
+
+  <main class="page">
+    <section class="steps" aria-label="مراحل التقديم">
+      <div class="step active"><span>١</span><div><b>مراجعة الضوابط</b><small>الاطلاع على المهام وشروط القبول</small></div></div>
+      <div class="step"><span>٢</span><div><b>تعبئة البيانات</b><small>إدخال المعلومات الوظيفية بدقة</small></div></div>
+      <div class="step"><span>٣</span><div><b>إصدار الرقم المرجعي</b><small>استلام إشعار تأكيد الطلب فوراً</small></div></div>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card">
+        <div class="info-title"><span class="info-icon">⚖️</span><h2>مهام واختصاصات اللجنة</h2></div>
+        <ul>
+          <li>متابعة الالتزام بالأنظمة واللوائح الإدارية والعسكرية المعتمدة.</li>
+          <li>النظر في المخالفات والتجاوزات وتطبيق معايير العدالة والشفافية.</li>
+          <li>رفع التقارير الدورية لتعزيز كفاءة الانضباط المؤسسي.</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <div class="info-title"><span class="info-icon">🛡️</span><h2>شروط وضوابط التقديم</h2></div>
+        <ul>
+          <li>أن يكون المتقدم على رأس العمل وذو سجل وظيفي منضبط.</li>
+          <li>الإلمام التام بالأنظمة واللوائح القانونية والإدارية ذات الصلة.</li>
+          <li>اجتياز المقابلة الشخصية والتقييم الأمني والوظيفي المعتمد.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="form-panel" id="application">
+      <div class="panel-topline"></div>
+      <div class="form-heading">
+        <span class="form-kicker">طلب انضمام إلكتروني</span>
+        <h1>نموذج طلب الالتحاق باللجنة</h1>
+        <p>يرجى تعبئة جميع الحقول المطلوبة بدقة لضمان سرعة معالجة الطلب</p>
+        <span class="gold-divider"></span>
+      </div>
+
+      <form id="applicationForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="discordId">Discord ID <em>*</em></label>
+            <input id="discordId" name="discordId" type="text" inputmode="numeric" autocomplete="off" placeholder="أدخل Discord ID بالأرقام فقط" required>
+          </div>
+          <div class="field">
+            <label for="nationalId">رقم الهوية الوطنية / الرقم العسكري <em>*</em></label>
+            <input id="nationalId" name="nationalId" type="text" inputmode="numeric" placeholder="أدخل رقم الهوية أو الرقم العسكري" required>
+          </div>
+          <div class="field">
+            <label for="rank">الرتبة / المرتبة الوظيفية <em>*</em></label>
+            <input id="rank" name="rank" type="text" placeholder="مثال: نقيب / المرتبة الثامنة" required>
+          </div>
+          <div class="field">
+            <label for="department">الجهة / الإدارة التابع لها <em>*</em></label>
+            <input id="department" name="department" type="text" placeholder="أدخل اسم الإدارة أو الوحدة" required>
+          </div>
+          <div class="field">
+            <label for="uniform">اليونت العسكري <em>*</em></label>
+            <input id="uniform" name="uniform" type="text" placeholder="أدخل اليونت العسكري" required>
+          </div>
+          <div class="field">
+            <label for="experience">سنوات الخبرة في المجال الإداري أو القانوني <em>*</em></label>
+            <select id="experience" name="experience" required>
+              <option value="" selected disabled>اختر سنوات الخبرة...</option>
+              <option>أقل من سنة</option>
+              <option>من سنة إلى 3 سنوات</option>
+              <option>من 4 إلى 6 سنوات</option>
+              <option>من 7 إلى 10 سنوات</option>
+              <option>أكثر من 10 سنوات</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="qualifications">المؤهلات العلمية والدورات ذات الصلة <em>*</em></label>
+            <textarea id="qualifications" name="qualifications" rows="3" placeholder="اذكر الشهادات العلمية أو الدورات التدريبية في الأنظمة، القانون، أو الرقابة..." required minlength="10"></textarea>
+          </div>
+        </div>
+
+        <label class="declaration">
+          <input type="checkbox" id="agreement" name="agreement" required>
+          <span>أقر وأتعهد بأن جميع البيانات والمعلومات المدخلة أعلاه صحيحة ودقيقة، وأتحمل كامل المسؤولية النظامية في حال ثبوت خلاف ذلك.</span>
+        </label>
+
+        <button class="submit-button" type="submit" id="submitButton">
+          <span>اعتماد وإرسال طلب التقديم</span><b>←</b>
+        </button>
+        <p class="privacy-note"><span>🔒</span> سيتم نسخ الطلب وفتح قناة Discord لتلصقه وترسله بنفسك.</p>
+        <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <footer>
+      <span class="footer-brand"><img src="logo.jpg" alt=""> لجنة الرقابة والانضباط</span>
+      <span>جميع الحقوق محفوظة © <b id="year"></b></span>
+      <span>نظام التقديم الإلكتروني</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
