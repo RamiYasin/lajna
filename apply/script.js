@@ -27,23 +27,23 @@ function getDiscordChannelLinks(url) {
 }
 
 function getDiscordMessage(data) {
-  return `:3_~1: **(ا <@&1568305164480286920> ا)** :3_~1:
+  return `**(ا <@&1568305164480286920> ا)** 
 
 **  نبارك لك القبول مبدئياً في لجنة الرقابة والانضباط الوزارية لوزارة الدفاع. :military_medal:  **
 
 **اسم المتقدم: ** <@${data.discordId}>
 
-**رقم الهوية الوطنية: ** ${data.nationalId}
+**رقم الايدي: ** ${data.nationalId}
 
 **الرتبة / المرتبة الوظيفية: ** ${data.rank}
 
-**الجهة / الإدارة التابع لها: ** ${data.department}
+**القطاع: ** ${data.department}
 
 **اليونت العسكري: ** ${data.uniform}
 
 **سنوات الخبرة في المجال الإداري أو القانوني : ** ${data.experience}
 
-**المؤهلات العلمية والدورات ذات الصلة: ** ${data.qualifications}
+**الخبرات العسكرية والدورات ذات الصلة: ** ${data.qualifications}
 
 **عليك مراجة **
 
